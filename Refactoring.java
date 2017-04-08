@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package refactoring;
+
 
 /**
  *
@@ -11,7 +11,7 @@ package refactoring;
  */
 import java.util.Enumeration;
 
-public class Refactor {
+public class Refactoring {
 	private MyCollection orders = new MyCollection();
 	private String name = "Customer name";
 	
@@ -21,9 +21,7 @@ public class Refactor {
 		double outstanding = 0.0;
 		
 		//print banner
-		System.out.println("*****************************");
-		System.out.println("****** Customer Owes ********");
-		System.out.println("*****************************");
+		print_banner();
 		
 		// calculate outstanding
 		while(e.hasMoreElements())
@@ -38,6 +36,12 @@ public class Refactor {
 		System.out.println("name: " + name);
 		System.out.println("amount: " + outstanding);
 
+	}
+
+	private void print_banner() {
+		System.out.println("*****************************");
+		System.out.println("****** Customer Owes ********");
+		System.out.println("*****************************");
 	}
 	
 
